@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error',['error',['../namespacegdrcd_1_1db.html#a308bf0eee782e61024e292c7bc7c41f0',1,'gdrcd::db']]]
+  ['connect',['connect',['../namespacegdrcd_1_1db.html#a35dc17ce1d05f27f3af459bddfa8bc80',1,'gdrcd::db']]]
 ];

@@ -1,6 +1,6 @@
 <?php
 /**
- *  @file       includes/template.inc.php
+ *  @file       system\inc\functions\core\template.inc.php
  *  
  *  @brief      Set di funzioni per la gestione dei template
  *  

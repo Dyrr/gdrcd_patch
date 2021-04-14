@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>GDRCD: Pagina Principale</title>
+<title>GDRCD Patch: Introduzione</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,9 +23,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GDRCD
+   <div id="projectname">GDRCD Patch
    &#160;<span id="projectnumber">5.6</span>
    </div>
+   <div id="projectbrief">Patch per modernizzare alcuni componenti del GDRCD</div>
   </td>
  </tr>
  </tbody>
@@ -78,10 +79,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">GDRCD Documentazione</div>  </div>
+<div class="title">Introduzione </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="mainpage"></a>
+Introduzione</h1>
+<h2><a class="anchor" id="mainpage_1"></a>
+1 Indice</h2>
+<ol type="1">
+<li><a href="#mainpage_1">Indice</a></li>
+<li><a href="#mainpage_2">Requisiti Minimi</a></li>
+<li><a href="#mainpage_3">Installazione</a><ol type="a">
+<li><a href="#mainpage_3_1">Installazione su GDRCD nuovo</a></li>
+<li><a href="#mainpage_3_2">Installazione su GDRCD preesistente</a></li>
+</ol>
+</li>
+</ol>
+<ol type="1">
+<li><a href="#mainpage_4">Funzionalità introdotte</a></li>
+</ol>
+<h2><a class="anchor" id="mainpage_2"></a>
+2 Requisiti Minimi</h2>
+<p>I requisiti minimi per poter utilizzare questa versione del GDRCD 7 sono:</p><ul>
+<li>GDRCD 5.5 (testato) o versioni inferiori (da testare)</li>
+<li>Uno spazio web su un host che PHP 7.1 o superiore</li>
+<li>Un database con MySQL 5.1 ao superiore (MySQL 5.6 consigliato);</li>
+<li>Le seguenti estensioni di php abilitate :<ul>
+<li>mysqli o mysqlind a scelta (PDO consigliata);</li>
+<li>openssl;</li>
+<li>gdlib.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="mainpage_3"></a>
+3 Installazione</h2>
+<h3><a class="anchor" id="mainpage_3_1"></a>
+3.1 Installazione su GDRCD nuovo</h3>
+<p>Per prima cosa bisogna estrarre i file dall'archivio compresso .zip scaricato dal repository o dal sito contenente il pacchetto in una cartella del vostro pc controllando che la struttura delle cartelle dello stesso sia stata mantenuta. Una volta fatta questa verifica i file vanno caricati sullo spazio web che avete scelto. Per effettuare questa operazione avrete bisogno di un client FTP come programma per caricare i file sull'host e dei dati di accesso all'ftp del vostro spazio web. Per il client ftp ci sono numerosi ottimi programmi freeware che fanno allo scopo, scegliete quello che vi attira di più. Per i dati di accesso all'ftp, solitamente l'host li invia nella mail di iscrizione o comunque ha delle guide al riguardo per cui vi rimando alla documentaizone dell'host. Una volta configurato il client ftp, basta caricare i file sull'host che è la stessa cosa di quando copiate dei file da una cartella all'altra del vostro pc e verificare per scrupolo che la sturttura delle directory sia rimasta la stessa e la patch sarà stata installata automaticamente e non dovrete fare altro.</p>
+<h3><a class="anchor" id="mainpage_3_1"></a>
+3.1 Installazione su GDRCD nuovo</h3>
+<p>Nel caso si voglia installare la patch su un GDRCD su cui si è già lavorato la procedura è molto simile alla precedente. Gli unici controlli che vanno fatti sono nei file <b><a class="el" href="required_8php.html" title="Il file con i componenti comuni dei vari entry point del CMS. ">includes/required.php</a></b> e nel file <b><a class="el" href="header_8inc_8php_source.html">header.inc.php</a></b>.</p><ul>
+<li>Se non avete fatto modifiche a questi file si può semplicemente procedere all'installazione come al punto <a href="#mainpage_3_1">Installazione su GDRCD nuovo</a>.</li>
+<li>Se sono state fatte delle modifiche a quei file, cancellate la versione di quei due file presente nella patch e poi aprite la vostra versione dei file e fate le seguenti modifiche:</li>
+</ul>
+<p><b><a class="el" href="header_8inc_8php_source.html">header.inc.php</a></b> </p><div class="fragment"><div class="line">&lt;?php</div><div class="line">    <span class="comment">//SE SI È IL GESTORE E</span></div><div class="line">    <span class="comment">//SE LA PAGINA RICHIESTA È QUELLA DI GESTIONE</span></div><div class="line">    <span class="keywordflow">if</span>(    $_SESSION[<span class="stringliteral">&#39;permessi&#39;</span>] == SUPERUSER </div><div class="line">        &amp;&amp; $_REQUEST[<span class="stringliteral">&#39;page&#39;</span>] == <span class="stringliteral">&#39;gestione&#39;</span>) {</div><div class="line">        <span class="comment">//aggiorna il file del css</span></div><div class="line">?&gt;</div><div class="line">        &lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> </div><div class="line">              href=<span class="stringliteral">&quot;&lt;?php echo csscrush_file(&#39;themes/&#39; . $PARAMETERS[&#39;themes&#39;][&#39;current_theme&#39;] . &#39;/css/source/gdrcd.css&#39;); ?&gt;&quot;</span> </div><div class="line">              type=<span class="stringliteral">&quot;text/css&quot;</span> /&gt;</div><div class="line">&lt;?php</div><div class="line">    <span class="comment">//IN CASO CONTRARIO</span></div><div class="line">    } <span class="keywordflow">else</span> {</div><div class="line">        <span class="comment">//carica il css preprocessato</span></div><div class="line">?&gt;</div><div class="line">        &lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> href=<span class="stringliteral">&quot;themes/&lt;?php echo $PARAMETERS[&#39;themes&#39;][&#39;current_theme&#39;]; ?&gt;/gdrcd.css&quot;</span> type=<span class="stringliteral">&quot;text/css&quot;</span> /&gt;</div><div class="line">&lt;?php</div><div class="line">    }</div><div class="line">?&gt;</div><div class="line">    &lt;link rel=<span class="stringliteral">&quot;stylesheet&quot;</span> href=<span class="stringliteral">&quot;https://use.fontawesome.com/releases/v5.15.3/css/all.css&quot;</span> crossorigin=<span class="stringliteral">&quot;anonymous&quot;</span>&gt;  </div></div><!-- fragment --><p> Questro blocco di codice va aggiunto esattamente prima del tag &lt;title&gt;.</p>
+<p><b><a class="el" href="required_8php.html" title="Il file con i componenti comuni dei vari entry point del CMS. ">includes/required.php</a></b> </p><div class="fragment"><div class="line"> <span class="comment">//include il file con la definizione della root</span></div><div class="line"> require_once(__DIR__ . <span class="stringliteral">&#39;/../root.inc.php&#39;</span>);   </div><div class="line"></div><div class="line"><span class="comment">//carica il set di funzioni per l&#39;interfacciarsi con il database</span></div><div class="line"> <a class="code" href="namespaceresources.html#af57e92482310c2f11b2f5901c163236c">\functions\load</a>(<span class="stringliteral">&#39;core/db/mysqli&#39;</span>);  </div><div class="line"></div><div class="line"> <span class="comment">//Eseguo la connessione al database</span></div><div class="line"> <span class="comment">//per questioni di retrocompatibilità ho lasciato anche la vechcia connesiuone al database.</span></div><div class="line"> $db = <a class="code" href="namespacegdrcd_1_1db.html#a35dc17ce1d05f27f3af459bddfa8bc80">\gdrcd\db\connect</a>(</div><div class="line">     $PARAMETERS[<span class="stringliteral">&#39;database&#39;</span>][<span class="stringliteral">&#39;username&#39;</span>],</div><div class="line">     $PARAMETERS[<span class="stringliteral">&#39;database&#39;</span>][<span class="stringliteral">&#39;password&#39;</span>],</div><div class="line">     $PARAMETERS[<span class="stringliteral">&#39;database&#39;</span>][<span class="stringliteral">&#39;url&#39;</span>],</div><div class="line">     $PARAMETERS[<span class="stringliteral">&#39;database&#39;</span>][<span class="stringliteral">&#39;database_name&#39;</span>],</div><div class="line">     $PARAMETERS[<span class="stringliteral">&#39;database&#39;</span>][<span class="stringliteral">&#39;collation&#39;</span>]</div><div class="line"> );  </div><div class="line"></div><div class="line"> <span class="comment">//include il preprocessore dei css</span></div><div class="line"> require_once <a class="code" href="group__resources__path.html#ga18c0644836e196aed6d63779e14d6bd8">ROOT</a> . <span class="stringliteral">&#39;/system/lib/csscrush/CssCrush.php&#39;</span>;</div><div class="line"></div><div class="line"> <span class="comment">//opzioni per il processore dei css</span></div><div class="line"> $settings= array(</div><div class="line">     <span class="stringliteral">&#39;minify&#39;</span> =&gt; <span class="keyword">true</span>,</div><div class="line">     <span class="stringliteral">&#39;output_dir&#39;</span> =&gt;  <a class="code" href="group__resources__path.html#ga18c0644836e196aed6d63779e14d6bd8">ROOT</a> . <span class="stringliteral">&#39;/themes/&#39;</span> . $PARAMETERS[<span class="stringliteral">&#39;themes&#39;</span>][<span class="stringliteral">&#39;current_theme&#39;</span>],</div><div class="line">     <span class="stringliteral">&#39;versioning&#39;</span> =&gt; <span class="keyword">true</span>,</div><div class="line">     <span class="stringliteral">&#39;formatter&#39;</span> =&gt; <span class="stringliteral">&#39;block&#39;</span></div><div class="line"> );  </div><div class="line"> <span class="comment">//imposta le opzioni per il processore dei css      </span></div><div class="line"> csscrush_set(<span class="stringliteral">&#39;options&#39;</span>,$settings);  </div></div><!-- fragment --><p> Questo blocco di codice va aggiunto alla fine del codice prima del tag di chiusura di php.</p>
+<h2><a class="anchor" id="mainpage_4"></a>
+4 Funzionalità introdotte</h2>
+<p>La patch introduce diversi strumenti rispetto alla vecchia versione del GDRCD, che seppur non visibili subito ad occhio nudo forniscono delle utilità molto comode per lo sviluppo modulare del pacchetto anche in vista di una nuova versione o lo sviluppo di moduli nuovi. La patch contiene:</p><ul>
+<li>Una integrazione con il preprocessore di css <a href="https://the-echoplex.net/csscrush/">csscrush</a> pre avere una gestione dei css più organizzata. Attualmente i css del gdrcd non sono stati modificati ma si può trovare nella cartella <b>themes/advanced/css/source/gdrcd.css</b> e nei vari file presenti in quella sezione i file per iniziare a lavorare con il preprocessore.</li>
+<li>Un nuovo gestore delle connessioni e operazioni con il database</li>
+<li>Dei set di funzioni per il caricamento delle risorse (funzioni,monuli,template) per facilizzare la gestione del lavoro. I vari set di sunzioni hann l aloro guida specifica nelle varie pagine di questa documentaizone. </li>
+</ul>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generato da &#160;<a href="http://www.doxygen.org/index.html">

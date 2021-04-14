@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['query',['query',['../namespacegdrcd_1_1db.html#aa74f2cfe91cd27f086f9b7fd542c839d',1,'gdrcd::db']]],
-  ['queryformat',['queryFormat',['../namespacegdrcd_1_1db.html#a176eb5da7d4ccc6169659464e8db221d',1,'gdrcd::db']]]
+  ['insert',['insert',['../namespacelog.html#ad61a0fbf2aaa198744b76ceeff6548fc',1,'log']]],
+  ['is_5fajax',['is_ajax',['../namespacetemplate.html#aa3529dbae4c4568ae8fe2a87ef19f059',1,'template']]]
 ];
