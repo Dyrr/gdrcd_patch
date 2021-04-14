@@ -8,7 +8,7 @@
 3. [Installazione] (#mainpage_3)
 	1. [Installazione su GDRCD nuovo](#mainpage_3_1)
 	2. [Installazione su GDRCD preesistente](#mainpage_3_2)
-3. [Funzionalità introdotte] (#mainpage_4)
+4. [Funzionalità introdotte] (#mainpage_4)
 	
 ## 2 Requisiti Minimi {#mainpage_2} #
 I requisiti minimi per poter utilizzare questa versione del GDRCD 7 sono:
