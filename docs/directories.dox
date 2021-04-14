@@ -1,0 +1,53 @@
+/**
+ *  @file system\_doc\directories.dox
+ *  
+ *  @brief Documentazione per le directory del CMS
+ *  
+ *  @version 1.0.0
+ *  @date    23/07/2018
+ *  
+ *  @author  Davide 'Dyrr' Grandi
+ *
+ *  @details Il file contiene la documentazione per la struttura delle directory del CMS che verrà usata per la 
+ *  generazione della documentazione in html per avere un'idea più chiara di che file si trovano all'interno di ogni 
+ *  directory. 
+	* @dir		includes
+	* @brief	<b>Cartella originale per l'inclusione dei componenti comuni del CMS</b>
+
+	* @dir		system
+	* @brief	<b>Cartella base dei componenti di sistema deil CMS</b>			
+
+		* @dir		system\inc
+		* @brief	<b>Cartella principale per l'inclusione dei file</b>
+
+			* @dir		system\inc\functions
+			* @brief	<b>Cartella principale per le funzioni del CMS</b>		
+		
+				* @dir		system\inc\functions\core
+				* @brief	<b>Cartella per le funzioni del core del CMS</b>			
+		
+					* @dir		system\inc\functions\core\db
+					* @brief	<b>Cartella principale per le funzioni per l'interrogazione del database</b>			
+					
+	
+
+				* @dir		system\inc\functions\game_engine
+				* @brief	<b>Cartella principale per le funzioni per i sistemi di gioco</b>		
+
+				* @dir		system\inc\functions\land
+				* @brief	<b>Cartella principale per le funzioni di gioco in land</b>		
+
+		* @dir		system\lib
+		* @brief	<b>Cartella principale per le librerie del CMS</b>
+
+		* @dir		system\pages
+		* @brief	<b>Cartella principale dei moduli del CMS</b>
+
+			* @dir		system\pages\game_engine
+			* @brief	<b>Cartella principale dei moduli specifici dei sistemi di gioco</b>
+
+			* @dir		system\pages\land
+			* @brief	<b>Cartella principale dei moduli specifici per la land</b>		
+				
+				
+*/
