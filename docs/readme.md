@@ -47,7 +47,7 @@ Gli unici controlli che vanno fatti sono nei file **includes/required.php** e ne
 - Se non avete fatto modifiche a questi file si può semplicemente procedere all'installazione come al punto 
 [Installazione su GDRCD nuovo](#mainpage_3_1).
 - Se sono state fatte delle modifiche a quei file, cancellate la versione di quei tre file presente nella patch e poi 
-aprite la vostra versione dei file e fate le seguenti modifiche:
+aprite la vostra versione dei file e fate le seguenti modifiche: 
 
 **config.inc.php**
 ```php
