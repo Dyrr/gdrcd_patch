@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>GDRCD Patch: Riferimenti per la directory themes</title>
+<title>GDRCD Patch: Riferimenti per il file themes/discord/css/source/_variabili.css</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -65,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li class="current"><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
       <li><a href="globals.html"><span>Elementi&#160;globali</span></a></li>
     </ul>
   </div>
@@ -85,30 +85,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_62adca9fbf9a8949ee1e01e61bf8f24e.html">themes</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_62adca9fbf9a8949ee1e01e61bf8f24e.html">themes</a></li><li class="navelem"><a class="el" href="dir_9c317441763c39fd9afee638f7a2d7d6.html">discord</a></li><li class="navelem"><a class="el" href="dir_79274fb2be5d7b4593008477e09c173c.html">css</a></li><li class="navelem"><a class="el" href="dir_2163774e6e24e43b452ced9bb5361958.html">source</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Riferimenti per la directory themes</div>  </div>
+<div class="title">Riferimenti per il file _variabili.css</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><p><b>Cartella con i temi del CMS</b> </p>
- 
+<p>Foglio di stile con le variabili dei css.  
 <a href="#details">Continua...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="subdirs"></a>
-Directory</h2></td></tr>
-<tr class="memitem:dir_eb9ce65a898a261f4c49679821f5cc2b"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_eb9ce65a898a261f4c49679821f5cc2b.html">advanced</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dir_9c317441763c39fd9afee638f7a2d7d6"><td class="memItemLeft" align="right" valign="top">directory &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dir_9c317441763c39fd9afee638f7a2d7d6.html">discord</a></td></tr>
-<tr class="memdesc:dir_9c317441763c39fd9afee638f7a2d7d6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><b>Cartella con un nuovo tema scuro basato sulla palette di colori di discord</b> <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+
+<p><a href="discord_2css_2source_2__variabili_8css_source.html">Vai al codice sorgente di questo file.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
-<p><b>Cartella con i temi del CMS</b> </p>
-</div><!-- contents -->
+<div class="textblock"><p>Foglio di stile con le variabili dei css. </p>
+<p>Nel file sono impostate tutte le variabili utilizzate dal preprocessore di css, sia come variabili vere e proprie a livello di valori sia, come  ovvero dei blocchi di impostazioni comuni che verranno poi richiamate ed incluse all'intenro di alcuni stili.<br />
+ Sarà per cui possibile prendere ed impostare un colore come variabile per esempio: </p><div class="fragment"><div class="line">@<span class="keyword">set</span> {</div><div class="line">    default_padding: 10px;</div><div class="line">}</div></div><!-- fragment --><p>Per impostare la variabile da richiamare poi con: </p><div class="fragment"><div class="line">div.container:$(default_padding);</div></div><!-- fragment --><p>Oppure impostare un set di proprietà: </p><div class="fragment"><div class="line">@mixin font_base</div><div class="line">{</div><div class="line">    font-size:14px;</div><div class="line">    font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;</div><div class="line">    line-height:20px;   </div><div class="line">}</div></div><!-- fragment --><p>Richiamate poi così: </p><div class="fragment"><div class="line">div.pagina_presenti_estesa</div><div class="line">{</div><div class="line">    ul.elenco_presenti </div><div class="line">    {</div><div class="line">        li.presente</div><div class="line">        {</div><div class="line">            @include font_base;</div><div class="line">        }</div><div class="line">    }</div><div class="line">    </div><div class="line">}</div></div><!-- fragment --> <dl class="section see"><dt>Si veda anche</dt><dd><a href="https://the-echoplex.net/csscrush/">https://the-echoplex.net/csscrush/</a> </dd>
+<dd>
+<a href="https://github.com/peteboere/css-crush">https://github.com/peteboere/css-crush</a> </dd></dl>
+
+<p>Definizione nel file <a class="el" href="discord_2css_2source_2__variabili_8css_source.html">_variabili.css</a>.</p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generato da &#160;<a href="http://www.doxygen.org/index.html">

@@ -72,6 +72,8 @@ Questro blocco di codice va aggiunto esattamente prima del tag <title>.
 ```php
 	//include il file con la definizione della root
 	require_once(__DIR__ . '/../root.inc.php');   
+	//include il file con il set di funzioni per le risorse
+	require_once ROOT . '/system/inc/functions/core/resources.inc.php';   
    
    //carica il set di funzioni per l'interfacciarsi con il database
 	\functions\load('core/db/mysqli');	
@@ -97,7 +99,31 @@ Questro blocco di codice va aggiunto esattamente prima del tag <title>.
         'formatter' => 'block'
     );  
     //imposta le opzioni per il processore dei css      
-    csscrush_set('options',$settings); 	
+    csscrush_set('options',$settings);
+
+	//INCLUSIONE DI UN AUTOLOADER STANDARD QUALORA QUALCUNO VOLESSE CIMENTARSI NELL'USO DELLA PROGRAMMAZIONE AD OGGETTI
+    /// [autoloader_example]        
+    //include l'autoloader
+    require_once(ROOT . '/system/lib/dlight/core/autoloader/Autoloader.php');
+    //istanzia l'autoloader
+    $autoloader = new \dlight\core\autoloader\Autoloader();
+    
+    //aggiunge i path in cui cercare le risorse
+    $autoloader->addPath(ROOT . '/system/lib/');
+    
+    //aggiunge nell'array degli autori che sfruttano la classe phpbrowscap
+    $autoloader->addVendor('gdrcd'); 
+    $autoloader->addVendor('erusev'); 
+
+	
+	/// [autoloader_example]        
+    
+    //INCLUSIONE DI UNA CLASSE CONTENITORE UTILE PER L'INIEZIONE DELLE DIPENDENZE SE QUALCUNO VOLESSE CIMENTARSI NELL'USO 
+    //DELLA PROGRAMMAZIONE AD OGGETTI
+    //avvia la classe contenitore
+    \gdrcd\core\gdrcd::getInstance();
+    //imposta un alias più comodo per il contenitore delle classi
+    $gdrcd = \gdrcd\core\gdrcd::$class;	 	
 ```
 Questo blocco di codice va aggiunto alla fine del codice prima del tag di chiusura di php.
 

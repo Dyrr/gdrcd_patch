@@ -1,0 +1,199 @@
+/**
+ *  @file       themes\discord\css\source\home\home.css
+ *  
+ *  @brief      Il foglio di stile per la homepage
+ *  
+ *  @version    5.6.0
+ *  @date       dyrr/dyrr/dyrr
+ *  
+ *  @author     Davide 'Dyrr' Grandi
+ *  
+ *  @details    Il foglio di stile contiene le modifiche per la homepage per il tema scuro "Discord". 
+ *  
+ *  @since      5.6.0
+ *
+ *	@todo		modificare i file sorgenti originali in maniera da incorporare tutto nel preprocessore di css
+ *
+ */ 
+div#main
+{
+	background:none;
+	background-color:$(color_002);
+
+	div#header
+	{
+		height:initial;
+		
+		display:grid;
+		grid-template-columns: min-content auto;
+		grid-template-rows: mon-content;	
+		grid-template-areas: 
+			"form title";
+
+		background-color:$(color_001);
+		
+		div.login_form
+		{
+			float: initial;
+			width: initial;
+			padding: initial;
+			margin-top: initial;
+		
+			margin:20px 0;
+			width:200px;
+			grid-area:form;
+			text-align:center;
+			color:$(color_004);
+			
+			input[type="submit"] {
+				display: initial;
+				float: initial;
+				margin-right: initial;
+				width: initial;
+			}	
+		
+		}
+
+		h1
+		{
+			grid-area:title;
+			align-self:center;
+			display:block;
+		}
+		
+		div.subtitle {
+			grid-area:title;
+			align-self:center;
+			display:block;		
+			margin-left: initial;
+			color: initial;
+			font-family: initial;
+			font-size: initial;
+			text-align:center;
+			margin-top:48px;
+		}	
+
+	}
+
+	div#content 
+	{
+		padding: initial;
+		background: initial;
+		background-color:$(color_003);
+		
+		color:$(color_004);
+		
+		display:grid;
+		grid-template-columns: min-content auto;
+		grid-template-rows: mon-content;	
+		grid-template-areas: 
+			"side content";	
+		
+		div.sidecontent
+		{
+
+			grid-area:side;
+			
+			background-color:$(color_006);
+			
+			ul,
+			div.side_modules
+			{
+
+				background:none;
+				margin:0;
+				padding:10px;
+				
+				table.statistics
+				{
+					background-color:$(color_001);
+					
+					tr.pair
+					{
+						background-color:$(color_003);
+					}
+				
+				}
+			
+			}
+			
+			ul
+			{
+				
+				margin:0;
+				
+				li 
+				{	
+					a,
+					a:visited
+					{
+						color:rgba(142,146,151,1);
+					}
+					
+					a:hover
+					{
+						background:none;
+						color:rgba(220,221,222,1);
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+		div.content_body
+		{
+			grid-area:content;		
+			
+			p
+			{
+				font-size:14px;
+			}
+			
+			a,
+			a:visited
+			{
+				color:$(color_005);
+				transition-duration: 0.5s;		
+			}
+			
+			a:hover
+			{
+				filter: brightness(150%);
+			}
+		
+		
+		}
+		
+	}
+
+	div#footer
+	{
+		height: initial;
+		padding: initial;
+		background: none;
+		background-color:$(color_001);
+		color:$(color_004);
+		
+		div
+		{
+			background: none;			
+		}
+		
+		a,
+		a:visited
+		{
+			color:$(color_005);
+			transition-duration: 0.5s;		
+		}
+		
+		a:hover
+		{
+			filter: brightness(150%);
+		}	
+	
+	
+	}
+
+}
