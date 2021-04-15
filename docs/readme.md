@@ -46,7 +46,7 @@ Nel caso si voglia installare la patch su un GDRCD su cui si è già lavorato	la
 Gli unici controlli che vanno fatti sono nei file **includes/required.php** e nel file **header.inc.php** e **ref_header.inc.php**.
 - Se non avete fatto modifiche a questi file si può semplicemente procedere all'installazione come al punto 
 [Installazione su GDRCD nuovo](#mainpage_3_1).
-- Se sono state fatte delle modifiche a quei file, cancellate la versione di quei tre file presente nella patch e poi 
+- Se sono state fatte delle modifiche a quei file, cancellate la versione di quei tre file presenti nella patch e poi 
 aprite la vostra versione dei file e fate le seguenti modifiche: 
 
 **config.inc.php**
@@ -79,6 +79,7 @@ Questo blocco di codice va aggiunto appena sotto gli altri tre parametri di conn
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">	 
 ```
 Questro blocco di codice va aggiunto esattamente prima del tag <title>.
+
 **ref_header.inc.php**
 ```php
 	<link rel="stylesheet" href="../themes/<?php echo $PARAMETERS['themes']['current_theme']; ?>/gdrcd.css" type="text/css" />
