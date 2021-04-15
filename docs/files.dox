@@ -15,17 +15,17 @@
 	*           e proprie a livello di valori sia, come @mixins ovvero dei blocchi di impostazioni comuni che verranno 
 	*           poi richiamate ed incluse all'intenro di alcuni stili.<br />
 	*           Sarà per cui possibile prendere ed impostare un colore come variabile per esempio:
-	*  @code{css} 
+	*  @code 
 			@set {
 				default_padding: 10px;
 			}
 	*  @endcode
 	*  @details Per impostare la variabile da richiamare poi con:
-	*  @code{css} 
+	*  @code 
 			div.container:$(default_padding);
 	*  @endcode	
 	*  @details Oppure impostare un set di proprietà:
-	*  @code{css} 
+	*  @code 
 			@mixin font_base
 			{
 				font-size:14px;
@@ -34,7 +34,7 @@
 			}
 	*  @endcode
 	*  @details Richiamate poi così:
-	*  @code{css} 
+	*  @code 
 			div.pagina_presenti_estesa
 			{
 				ul.elenco_presenti 
