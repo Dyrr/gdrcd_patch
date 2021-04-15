@@ -94,8 +94,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
 </div><!--header-->
 <div class="contents">
 
+<p>Foglio di stile con le variabili dei css.  
+<a href="#details">Continua...</a></p>
+
 <p><a href="__variabili_8css_source.html">Vai al codice sorgente di questo file.</a></p>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<div class="textblock"><p>Foglio di stile con le variabili dei css. </p>
+<p>Nel file sono impostate tutte le variabili utilizzate dal preprocessore di css, sia come variabili vere e proprie a livello di valori sia, come  ovvero dei blocchi di impostazioni comuni che verranno poi richiamate ed incluse all'intenro di alcuni stili.<br />
+ Sarà per cui possibile prendere ed impostare un colore come variabile per esempio: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;@set {</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    default_padding: 10px;</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;}</div></div><!-- fragment --><p>Per impostare la variabile da richiamare poi con: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;div.container:$(default_padding);</div></div><!-- fragment --><p>Oppure impostare un set di proprietà: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;@mixin font_base</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    font-size:14px;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    line-height:20px;   </div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div></div><!-- fragment --><p>Richiamate poi così: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;div.pagina_presenti_estesa</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;{</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    ul.elenco_presenti </div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    {</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        li.presente</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        {</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;            @include font_base;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        }</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    }</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div></div><!-- fragment --> 
+<p>Definizione nel file <a class="el" href="__variabili_8css_source.html">_variabili.css</a>.</p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generato da &#160;<a href="http://www.doxygen.org/index.html">

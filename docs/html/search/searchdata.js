@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "$_acdefghilmnopqrstuv",
   1: "agi",
   2: "dfglmrt",
-  3: "_acdfghilmprstu",
+  3: "_acdfghilmprst",
   4: "_acdefgilmnopqrstuv",
   5: "$efgimprt",
   6: "c",

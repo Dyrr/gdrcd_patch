@@ -2,3 +2,64 @@
 *  @file 	docs\files.dox
 *  @brief 	Commenti ai file non documentabili internamente.
 */
+
+		/**
+		*  @file 	themes\discord\css\source\home\home.css
+		*  @brief 	Foglio di stile per la homepage
+		*/
+
+	/**
+	*  @file 	themes\discord\css\source\_variabili.css
+	*  @brief 	Foglio di stile con le variabili dei css
+	*  @details Nel file sono impostate tutte le variabili utilizzate dal preprocessore di css, sia come variabili vere 
+	*           e proprie a livello di valori sia, come @mixins ovvero dei blocchi di impostazioni comuni che verranno 
+	*           poi richiamate ed incluse all'intenro di alcuni stili.<br />
+	*           Sarà per cui possibile prendere ed impostare un colore come variabile per esempio:
+	*  @code{css} 
+			@set {
+				default_padding: 10px;
+			}
+	*  @endcode
+	*  @details Per impostare la variabile da richiamare poi con:
+	*  @code{css} 
+			div.container:$(default_padding);
+	*  @endcode	
+	*  @details Oppure impostare un set di proprietà:
+	*  @code{css} 
+			@mixin font_base
+			{
+				font-size:14px;
+				font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+				line-height:20px;	
+			}
+	*  @endcode
+	*  @details Richiamate poi così:
+	*  @code{css} 
+			div.pagina_presenti_estesa
+			{
+				ul.elenco_presenti 
+				{
+					li.presente
+					{
+						@include font_base;
+					}
+				}
+				
+			}
+	*  @endcode	
+	*/
+	
+	/**
+	*  @file 	themes\discord\css\source\common.css
+	*  @brief 	Foglio di stile con le regoli comuni
+	*/
+
+	/**
+	*  @file 	themes\discord\css\source\form.css
+	*  @brief 	Foglio di stile con le regole per i form
+	*/
+
+	/**
+	*  @file 	themes\discord\css\source\gdrcd.css
+	*  @brief 	Foglio di stile principale della land
+	*/	
