@@ -41,7 +41,7 @@ $PARAMETERS['database']['collation'] = 'utf8mb4';        //set di caratteri del 
 ```
 Questo blocco di codice va aggiunto appena sotto gli altri tre parametri di connesisone al database.
 
-### 3.1 Installazione su GDRCD preesistente {#mainpage_3_2} #
+### 3.2 Installazione su GDRCD preesistente {#mainpage_3_2} #
 Nel caso si voglia installare la patch su un GDRCD su cui si è già lavorato	la procedura è molto simile alla precedente.
 Gli unici controlli che vanno fatti sono nei file **includes/required.php** e nel file **header.inc.php** e **ref_header.inc.php**.
 - Se non avete fatto modifiche a questi file si può semplicemente procedere all'installazione come al punto 
