@@ -4,5 +4,6 @@ var searchData=
   ['helpers_2einc_2ephp',['helpers.inc.php',['../helpers_8inc_8php.html',1,'']]],
   ['home_2ecss',['home.css',['../discord_2css_2source_2home_2home_8css.html',1,'']]],
   ['home_2ecss',['home.css',['../advanced_2css_2source_2home_2home_8css.html',1,'']]],
+  ['home_2ephp',['home.php',['../home_8php.html',1,'']]],
   ['homepage_2ecss',['homepage.css',['../homepage_8css.html',1,'']]]
 ];
