@@ -29,7 +29,9 @@
 	
     //carica il set di funzioni per l'interfacciarsi con il database
 	\functions\load('core/db/mysqli');	
-    
+    //carica gli helpers
+	\functions\load('core/helpers');	
+	
 	//Eseguo la connessione al database
     //per questioni di retrocompatibilità ho lasciato anche la vechcia connesiuone al database.
     $db = \gdrcd\db\connect(

@@ -77,7 +77,9 @@ Questro blocco di codice va aggiunto esattamente prima del tag <title>.
    
    //carica il set di funzioni per l'interfacciarsi con il database
 	\functions\load('core/db/mysqli');	
-    
+     //carica gli helpers
+	\functions\load('core/helpers');	   
+	
 	//Eseguo la connessione al database
     //per questioni di retrocompatibilità ho lasciato anche la vechcia connesiuone al database.
     $db = \gdrcd\db\connect(
@@ -114,7 +116,6 @@ Questro blocco di codice va aggiunto esattamente prima del tag <title>.
     //aggiunge nell'array degli autori che sfruttano la classe phpbrowscap
     $autoloader->addVendor('gdrcd'); 
     $autoloader->addVendor('erusev'); 
-
 	
 	/// [autoloader_example]        
     
