@@ -1,3 +1,19 @@
+<?php
+/**
+ *  @file       themes\discord\home\ambientazione.php
+ *  
+ *  @brief      File con la descrizione dell'ambientaizone della land.
+ *  
+ *  @version    5.6.0
+ *  @date       dyrr/dyrr/dyrr
+ *  
+ *  @author     Davide 'Dyrr' Grandi
+ *  
+ *  @details    Il file include i componenti comuni necessari ai vari punti di ingresso 
+ *  
+ *  @since      5.6.0
+ */ 
+ ?>
 <div class="pagina_ambientazione">
     <?php
     $strInnerPage == "";

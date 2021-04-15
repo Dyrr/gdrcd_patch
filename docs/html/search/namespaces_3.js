@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modulo',['modulo',['../namespacemodulo.html',1,'']]]
+  ['log',['log',['../namespacelog.html',1,'']]]
 ];

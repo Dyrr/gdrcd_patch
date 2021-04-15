@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mysqli_2einc_2ephp',['mysqli.inc.php',['../mysqli_8inc_8php.html',1,'']]]
+  ['chat_2ecss',['chat.css',['../chat_8css.html',1,'']]],
+  ['common_2ecss',['common.css',['../common_8css.html',1,'']]]
 ];

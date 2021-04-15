@@ -27,8 +27,9 @@
 				* @brief	<b>Cartella per le funzioni del core del CMS</b>			
 		
 					* @dir		system\inc\functions\core\db
-					* @brief	<b>Cartella principale per le funzioni per l'interrogazione del database</b>			
-					
+					* @brief	<b>Cartella principale per le funzioni per l'interrogazione del database</b>		
+
+			
 	
 
 				* @dir		system\inc\functions\game_engine
@@ -39,7 +40,22 @@
 
 		* @dir		system\lib
 		* @brief	<b>Cartella principale per le librerie del CMS</b>
+		
+			* @dir		system\lib\dlight
+			* @brief	<b>Cartella principale le librerie dell'autore Dyrr</b>		
 
+				* @dir		system\lib\dlight\core
+				* @brief	<b>Cartella per le librerie generiche dell'autore slegate all'uso specifico della land</b>
+
+					* @dir		system\lib\dlight\core\autoloader
+					* @brief	<b>Cartella per le librerie per l'autoloading</b>				
+		
+			* @dir		system\lib\gdrcd
+			* @brief	<b>Cartella principale le librerie base del GDRCD</b>
+
+				* @dir		system\lib\gdrcd\core
+				* @brief	<b>Cartella per le librerie generiche dell'autore slegate all'uso specifico della land</b>			
+		
 		* @dir		system\pages
 		* @brief	<b>Cartella principale dei moduli del CMS</b>
 
@@ -49,5 +65,25 @@
 			* @dir		system\pages\land
 			* @brief	<b>Cartella principale dei moduli specifici per la land</b>		
 				
+	* @dir		themes
+	* @brief	<b>Cartella con i temi del CMS</b>
+		
+		* @dir		themes\discord
+		* @brief	<b>Cartella con un nuovo tema scuro basato sulla palette di colori di discord</b>
+		
+			* @dir		themes\discord\css
+			* @brief	<b>Cartella i css della land</b>
+			
+				* @dir		themes\discord\css\source
+				* @brief	<b>Cartella i css sorgenti della land</b>
 				
+					* @dir		themes\discord\css\source\home
+					* @brief	<b>Cartella i css sorgenti specifici per la home</b>				
+
+			* @dir		themes\discord\js
+			* @brief	<b>Cartella i javascript specifici per questo tema</b>
+
+			* @dir		themes\discord\template
+			* @brief	<b>Cartella base per i template specifici per questo tema</b>				
+	
 */

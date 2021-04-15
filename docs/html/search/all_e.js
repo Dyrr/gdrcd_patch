@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['query',['query',['../namespacegdrcd_1_1db.html#aa74f2cfe91cd27f086f9b7fd542c839d',1,'gdrcd::db']]],
-  ['queryformat',['queryFormat',['../namespacegdrcd_1_1db.html#a176eb5da7d4ccc6169659464e8db221d',1,'gdrcd::db']]]
+  ['param_5fint',['PARAM_INT',['../group__db__constanta.html#ga42c69b1d1b294f72277f9b2626e6d8b2',1,'gdrcd::db']]],
+  ['param_5fstr',['PARAM_STR',['../group__db__constanta.html#gaff1158d4f6452ba5a6c2c54b4f50df4d',1,'gdrcd::db']]],
+  ['paramprepare',['paramPrepare',['../namespacegdrcd_1_1db.html#adb857146f3159e7898cbf88ee52981fb',1,'gdrcd::db']]],
+  ['pathformat',['pathFormat',['../namespacemodulo.html#ad3324321639ec7eb18e05825afa90449',1,'modulo']]],
+  ['presenti_2ecss',['presenti.css',['../presenti_8css.html',1,'']]],
+  ['processurl',['processURL',['../helpers_8inc_8php.html#a7bd4cbd9d55dbfae16792f0cdc919303',1,'helpers.inc.php']]]
 ];

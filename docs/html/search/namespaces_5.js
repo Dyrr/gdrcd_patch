@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['template',['template',['../namespacetemplate.html',1,'']]]
+  ['resources',['resources',['../namespaceresources.html',1,'']]]
 ];

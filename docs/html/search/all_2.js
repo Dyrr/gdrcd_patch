@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['connect',['connect',['../namespacegdrcd_1_1db.html#a35dc17ce1d05f27f3af459bddfa8bc80',1,'gdrcd::db']]],
-  ['costanti_20del_20set_20di_20funzioni_20della_20connessione_20al_20database',['costanti del set di funzioni della connessione al database',['../group__db__constanta.html',1,'']]],
-  ['costanti_20del_20set_20di_20funzioni_20per_20il_20caricamento_20delle_20funzioni',['costanti del set di funzioni per il caricamento delle funzioni',['../group__resources__path.html',1,'']]]
+  ['action',['action',['../namespacegdrcd_1_1db.html#a7196026ce567885dec811bc266074524',1,'gdrcd::db']]],
+  ['addpath',['addPath',['../classdlight_1_1core_1_1autoloader_1_1_autoloader.html#aa1617959bf12fa694511f4914b63d9fd',1,'dlight::core::autoloader::Autoloader']]],
+  ['addprefix',['addPrefix',['../classdlight_1_1core_1_1autoloader_1_1_autoloader.html#a2d291f1359c8f91793f5ef4e1af6e2e7',1,'dlight::core::autoloader::Autoloader']]],
+  ['addvendor',['addVendor',['../classdlight_1_1core_1_1autoloader_1_1_autoloader.html#a2fc2b48594997e8768bfdfcc8ba8fdf5',1,'dlight::core::autoloader::Autoloader']]],
+  ['ambientazione_2ephp',['ambientazione.php',['../ambientazione_8php.html',1,'']]],
+  ['autoloader',['Autoloader',['../classdlight_1_1core_1_1autoloader_1_1_autoloader.html',1,'dlight::core::autoloader']]],
+  ['autoloader_2ephp',['Autoloader.php',['../_autoloader_8php.html',1,'']]]
 ];

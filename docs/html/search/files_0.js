@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['helpers_2einc_2ephp',['helpers.inc.php',['../helpers_8inc_8php.html',1,'']]]
+  ['_5fvariabili_2ecss',['_variabili.css',['../__variabili_8css.html',1,'']]]
 ];

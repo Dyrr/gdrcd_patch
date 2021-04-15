@@ -51,4 +51,28 @@
         'formatter' => 'block'
     );  
     //imposta le opzioni per il processore dei css      
-    csscrush_set('options',$settings); 	
+    csscrush_set('options',$settings); 
+
+	//INCLUSIONE DI UN AUTOLOADER STANDARD QUALORA QUALCUNO VOLESSE CIMENTARSI NELL'USO DELLA PROGRAMMAZIONE AD OGGETTI
+    /// [autoloader_example]        
+    //include l'autoloader
+    require_once(ROOT . '/system/lib/dlight/core/autoloader/Autoloader.php');
+    //istanzia l'autoloader
+    $autoloader = new \dlight\core\autoloader\Autoloader();
+    
+    //aggiunge i path in cui cercare le risorse
+    $autoloader->addPath(ROOT . '/system/lib/');
+    
+    //aggiunge nell'array degli autori che sfruttano la classe phpbrowscap
+    $autoloader->addVendor('gdrcd'); 
+    $autoloader->addVendor('erusev'); 
+
+	
+	/// [autoloader_example]        
+    
+    //INCLUSIONE DI UNA CLASSE CONTENITORE UTILE PER L'INIEZIONE DELLE DIPENDENZE SE QUALCUNO VOLESSE CIMENTARSI NELL'USO 
+    //DELLA PROGRAMMAZIONE AD OGGETTI
+    //avvia la classe contenitore
+    \gdrcd\core\gdrcd::getInstance();
+    //imposta un alias più comodo per il contenitore delle classi
+    $gdrcd = \gdrcd\core\gdrcd::$class;	

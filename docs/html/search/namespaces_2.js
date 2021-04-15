@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['log',['log',['../namespacelog.html',1,'']]]
+  ['core',['core',['../namespacegdrcd_1_1core.html',1,'gdrcd']]],
+  ['db',['db',['../namespacegdrcd_1_1db.html',1,'gdrcd']]],
+  ['gdrcd',['gdrcd',['../namespacegdrcd.html',1,'']]]
 ];

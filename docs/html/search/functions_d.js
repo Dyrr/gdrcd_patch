@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['rawout',['rawout',['../helpers_8inc_8php.html#ae8237dbfec1115308408115b6db88b77',1,'helpers.inc.php']]],
-  ['renderhtml',['renderHTML',['../namespacetemplate.html#a9ef9e75716a6163a06ef0ab42bf647c6',1,'template']]],
-  ['renderjson',['renderJSON',['../namespacetemplate.html#a214fef89729419a5af6c164bb56cede8',1,'template']]]
+  ['query',['query',['../namespacegdrcd_1_1db.html#aa74f2cfe91cd27f086f9b7fd542c839d',1,'gdrcd::db']]],
+  ['queryformat',['queryFormat',['../namespacegdrcd_1_1db.html#a176eb5da7d4ccc6169659464e8db221d',1,'gdrcd::db']]]
 ];
