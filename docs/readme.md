@@ -33,11 +33,19 @@ Per i dati di accesso all'ftp, solitamente l'host li invia nella mail di iscrizi
 per cui vi rimando alla documentaizone dell'host.
 Una volta configurato il client ftp, basta caricare i file sull'host che è la stessa cosa di quando copiate dei file da 
 una cartella all'altra del vostro pc e verificare per scrupolo che la sturttura delle directory sia rimasta la stessa e 
-la patch sarà stata installata automaticamente e non dovrete fare altro.
+la patch sarà stata installata. l'unica modifica da fare sarà questa:
+
+**config.inc.php**
+```php
+$PARAMETERS['database']['collation'] = 'utf8mb4';        //set di caratteri del db
+```
+Questo blocco di codice va aggiunto appena sotto gli altri tre parametri di connesisone al database.
+
+
 
 ### 3.1 Installazione su GDRCD nuovo {#mainpage_3_1} #
 Nel caso si voglia installare la patch su un GDRCD su cui si è già lavorato	la procedura è molto simile alla precedente.
-Gli unici controlli che vanno fatti sono nei file **includes/required.php** e nel file **header.inc.php**.
+Gli unici controlli che vanno fatti sono nei file **includes/required.php** e nel file **header.inc.php** e **ref_header.inc.php**.
 - Se non avete fatto modifiche a questi file si può semplicemente procedere all'installazione come al punto 
 [Installazione su GDRCD nuovo](#mainpage_3_1).
 - Se sono state fatte delle modifiche a quei file, cancellate la versione di quei due file presente nella patch e poi 
@@ -64,6 +72,12 @@ aprite la vostra versione dei file e fate le seguenti modifiche:
 <?php
 	}
 ?>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">	 
+```
+Questro blocco di codice va aggiunto esattamente prima del tag <title>.
+**ref_header.inc.php**
+```php
+	<link rel="stylesheet" href="../themes/<?php echo $PARAMETERS['themes']['current_theme']; ?>/gdrcd.css" type="text/css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous">	 
 ```
 Questro blocco di codice va aggiunto esattamente prima del tag <title>.
