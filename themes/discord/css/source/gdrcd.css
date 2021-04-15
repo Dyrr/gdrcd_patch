@@ -1,0 +1,268 @@
+/* IMPORTA LE VARIABILI */
+@import '_variabili.css';
+
+/* IMPORTA GLI STILI COMUNI */
+@import 'common.css';
+@import 'form.css';
+@import 'marker.css';
+@import 'report.css';
+
+
+/* IMPORTA GLI STILI PER LA HOMEPAGE */
+@import 'home/home.css';
+body
+{
+	background:none;
+	background-color: $(color_002);
+}
+
+
+
+div.pagina_info_location,
+div.msgs, 
+div.menu, 
+div.presenti, 
+div.output,
+div.page_title h2,
+div.luogo
+{
+	background:none;	
+	background-color:$(color_007);
+	color:#fff;
+}
+
+div.link_menu {
+    padding: 0 0 0 20px;
+    font-size: 14px;
+}
+
+a
+a.visited
+{
+	color:rgba(142,146,151,1);
+}
+
+a:hover
+{
+	color:rgba(220,221,222,1);
+	background-color: initial;
+	border-radius: initial;
+	font-weight:initial;
+}
+
+div.link_menu,
+div.pagina_messaggi
+{ 
+
+	a, 
+	a:visited
+	{
+		color:rgba(142,146,151,1);
+	}
+	
+	a:hover
+	{
+		color:rgba(220,221,222,1);
+		background-color: initial;
+		border-radius: initial;
+		font-weight:initial;
+	}
+}
+
+div.menu_scheda
+{
+	a,
+	a:visited
+	{
+		color:#ffffff;
+	}
+}
+
+div.elenco_record_gioco
+{ 
+
+	table
+	{
+		background-color: $(color_002);
+	}
+	
+}
+
+div.capitolo_elenco
+{
+	background-color:  $(color_002);
+}
+
+td.casella_elemento, 
+div.elementi_elenco
+{
+    background-color:$(color_001);
+	
+	a, 
+	a:visited
+	{
+		color:rgba(142,146,151,1);
+		font-weight:initial;		
+	}
+	
+	a:hover
+	{
+		color:rgba(220,221,222,1);
+		background-color: initial;
+		border-radius: initial;
+		font-weight:initial;
+	}
+	
+}
+
+div.pagina_forum div.panels_box table {
+   background-color: $(color_002); 
+}
+
+td.forum_main_post_message, 
+td.forum_other_post_message,
+td.forum_main_post_author,
+td.forum_other_post_author
+{
+    background-color:$(color_001);
+    vertical-align: text-top;
+}
+
+div.forum_post_modify
+{
+	a, 
+	a:visited
+	{
+		color:rgba(142,146,151,1);
+		font-weight:initial;		
+	}
+	
+	a:hover
+	{
+		color:rgba(220,221,222,1);
+		background-color: initial;
+		border-radius: initial;
+		font-weight:initial;
+	}	
+	
+}
+
+table.visit
+{
+	td
+	{
+		background-color:$(color_001);		
+	}
+}
+div.pagina_forum div.panels_box {
+	background-color:initial;
+}
+
+div.pagina_servizi_mercato
+{
+	td.casella_elemento_img,
+	td.casella_elemento,
+	td.casella_controlli,
+	{
+		background-color:$(color_001);		
+	}
+	
+}
+
+div.link_back
+{
+	background-color:initial;
+	a, 
+	a:visited
+	{
+		@include base_button;
+	}
+	
+	a:hover
+	{
+		@include base_button_hover;
+	}
+
+	a:active
+	{
+		@include base_button_pressed;
+	}	
+}
+
+div.pagina_servizi_gilde
+{
+	
+	tr:nth-child(1) td,
+	tr:nth-child(2) td
+	{
+		background-color:$(color_002);
+		
+	}
+	
+	
+	td
+	{
+		background-color:$(color_001);
+	}
+}
+
+div.pagina_servizi_lavoro
+{
+	
+	tr:nth-child(1) td,
+	{
+		background-color:$(color_002);
+		
+	}
+	
+	td
+	{
+		background-color:$(color_001);
+	}
+}
+
+div.pagina_presenti,
+div.pagina_presenti_estesa
+{
+	a, 
+	a:visited
+	{
+		color:#8e9297;
+		font-weight:initial;		
+	}
+	
+	a:hover
+	{
+		color:rgba(220,221,222,1);
+		background-color: initial;
+		border-radius: initial;
+		font-weight:initial;
+	}	
+}
+
+div.pagina_presenti_estesa
+{
+	ul.elenco_presenti 
+	{
+		li.presente
+		{
+			@include font_base;
+		}
+	}
+	
+}
+
+div.pagina_messages_center
+{
+	tr:nth-child(1) td,
+	{
+		background-color:$(color_002);
+		
+	}
+	
+	td
+	{
+		background-color:$(color_001);
+	}	
+	
+}

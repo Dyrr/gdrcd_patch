@@ -1,0 +1,32 @@
+{
+    "gdrcd.css": {
+        "imports": [
+            "_variabili.css",
+            "common.css",
+            "form.css",
+            "home\/home.css"
+        ],
+        "datem_sum": 8092383391,
+        "options": {
+            "minify": true,
+            "formatter": "block",
+            "versioning": true,
+            "boilerplate": true,
+            "vars": [],
+            "cache": true,
+            "context": null,
+            "import_path": null,
+            "output_file": null,
+            "output_dir": "F:\\webserver\\applications\\github\\Dyrr\\GDRCD_TEST\/themes\/discord",
+            "asset_dir": null,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "plugins": null,
+            "settings": [],
+            "stat_dump": false,
+            "source_map": false,
+            "newlines": "use-platform"
+        }
+    }
+}

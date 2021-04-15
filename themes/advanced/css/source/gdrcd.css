@@ -1,8 +1,0 @@
-/* IMPORTA LE VARIABILI */
-@import '_variabili.css';
-
-/* IMPORTA GLI STILI COMUNI */
-@import 'common.css';
-@import 'form.css';
-@import 'marker.css';
-@import 'report.css';

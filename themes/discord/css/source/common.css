@@ -1,0 +1,132 @@
+/**
+ *  @file       themes/advanced/css/source/common.css
+ *  
+ *  @brief      regole css generiche comuni 
+ *  
+ *  @version    5.6.0
+ *  @date       dyrr/dyrr/dyrr
+ *  
+ *  @author     Davide 'Dyrr' Grandi
+ */
+/* INIZIO STILI COMUNI */
+::-webkit-scrollbar {
+  width: 5px;
+} 
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.25); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.50); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.75); 
+}
+
+div,
+textarea
+{
+
+	scrollbar-color: #26282c #737579;
+	scrollbar-width: thin;	
+}
+
+body
+{
+	font-size:14px;
+	font-family:Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+	line-height:20px;
+}
+
+
+.button a,
+input[type="submit"],
+.button button
+{
+	@include base_button;
+}
+
+.button a i,
+.button button i
+{
+	line-height:initial;
+}
+
+.button a:hover,
+input[type=submit]:hover,
+.button button:hover
+{
+	@include base_button_hover;
+}
+
+.button a:active,
+input[type=submit]:active,
+.button button:active
+{
+	@include base_button_pressed;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"], 
+select,
+textarea
+
+{
+	background-color:rgba(255,255,255,0.25);
+	border-bottom:1px solid white;
+	border-right:1px solid white;
+	border-left:1px solid #000000;
+	border-top:1px solid #000000;
+	box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.75);
+	padding:7px;
+	box-sizing: border-box;		
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus, 
+textarea:focus
+{
+	background-color:rgba(255,255,255,0.5);	
+}
+
+input {
+  filter: none;
+}
+
+/* HEADER */
+h1,
+h2
+{
+    font-weight: bolder;
+	color:#EBECF0;
+	font-family: 'Roboto', sans-serif;
+	text-transform:uppercase;
+	letter-spacing:2px;
+
+	 text-shadow: 
+	rgba(0,0,0,0.5) -1px 0, 
+	rgba(0,0,0,0.3) 0 -1px, 
+	rgba(255,255,255,0.5) 0 1px, 
+	rgba(0,0,0,0.3) -1px -2px;
+	margin:initial;
+	padding:initial;
+}
+
+h1
+{
+	font-size:32px;
+	text-align:center;
+}
+
+h2
+{
+	font-size:16px;	
+}
