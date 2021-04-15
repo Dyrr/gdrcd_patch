@@ -41,15 +41,19 @@ $PARAMETERS['database']['collation'] = 'utf8mb4';        //set di caratteri del 
 ```
 Questo blocco di codice va aggiunto appena sotto gli altri tre parametri di connesisone al database.
 
-
-
-### 3.1 Installazione su GDRCD nuovo {#mainpage_3_1} #
+### 3.1 Installazione su GDRCD preesistente {#mainpage_3_1} #
 Nel caso si voglia installare la patch su un GDRCD su cui si è già lavorato	la procedura è molto simile alla precedente.
 Gli unici controlli che vanno fatti sono nei file **includes/required.php** e nel file **header.inc.php** e **ref_header.inc.php**.
 - Se non avete fatto modifiche a questi file si può semplicemente procedere all'installazione come al punto 
 [Installazione su GDRCD nuovo](#mainpage_3_1).
-- Se sono state fatte delle modifiche a quei file, cancellate la versione di quei due file presente nella patch e poi 
+- Se sono state fatte delle modifiche a quei file, cancellate la versione di quei tre file presente nella patch e poi 
 aprite la vostra versione dei file e fate le seguenti modifiche:
+
+**config.inc.php**
+```php
+$PARAMETERS['database']['collation'] = 'utf8mb4';        //set di caratteri del db
+```
+Questo blocco di codice va aggiunto appena sotto gli altri tre parametri di connesisone al database.
 
 **header.inc.php**
 ```php
@@ -141,6 +145,7 @@ Questro blocco di codice va aggiunto esattamente prima del tag <title>.
     $gdrcd = \gdrcd\core\gdrcd::$class;	 	
 ```
 Questo blocco di codice va aggiunto alla fine del codice prima del tag di chiusura di php.
+La seconda procedura è indicata anche se si tenta di installate la patch su una versione del gdrcd diversa dal 5.5.
 
 ## 4 Funzionalità introdotte {#mainpage_4} #		
 La patch introduce diversi strumenti rispetto alla vecchia versione del GDRCD, che seppur non visibili subito ad occhio 
