@@ -129,9 +129,10 @@ Introduzione</h1>
 <h2><a class="anchor" id="mainpage_4"></a>
 4 Funzionalità introdotte</h2>
 <p>La patch introduce diversi strumenti rispetto alla vecchia versione del GDRCD, che seppur non visibili subito ad occhio nudo forniscono delle utilità molto comode per lo sviluppo modulare del pacchetto anche in vista di una nuova versione o lo sviluppo di moduli nuovi. La patch contiene:</p><ul>
-<li>Una integrazione con il preprocessore di css <a href="https://the-echoplex.net/csscrush/">csscrush</a> pre avere una gestione dei css più organizzata. Attualmente i css del gdrcd non sono stati modificati ma si può trovare nella cartella <b><a class="el" href="advanced_2css_2source_2gdrcd_8css.html">themes/advanced/css/source/gdrcd.css</a></b> e nei vari file presenti in quella sezione i file per iniziare a lavorare con il preprocessore.</li>
+<li>Una integrazione con il preprocessore di css <a href="https://the-echoplex.net/csscrush/">csscrush</a> pre avere una gestione dei css più organizzata.</li>
+<li>Usando il preprocessore di css è stato creato un tema scuro con una palette di colori simile a quella di discord che potete selezionare da config come tema sciegliento demplicemente il valore "discord" da impostare al tema.</li>
 <li>Un nuovo gestore delle connessioni e operazioni con il database</li>
-<li>Dei set di funzioni per il caricamento delle risorse (funzioni,monuli,template) per facilizzare la gestione del lavoro. I vari set di sunzioni hann l aloro guida specifica nelle varie pagine di questa documentaizone. </li>
+<li>Dei set di funzioni per il caricamento delle risorse (funzioni,monuli,template) per facilizzare la gestione del lavoro. I vari set di sunzioni hann l aloro guida specifica nelle varie pagine di questa documentaizone ma principalmente potranno essere attivati, includendo il set specifico di funzioni, o nel <b><a class="el" href="required_8php.html" title="Il file con i componenti comuni dei vari entry point del CMS. ">includes/required.php</a></b> se si vuole averlo sempre attive, o nella pagina dove si vuole sfruttarlo semplicemente richiamandolo così: <div class="fragment"><div class="line"><a class="code" href="namespaceresources.html#af57e92482310c2f11b2f5901c163236c">\functions\load</a>(<span class="stringliteral">&#39;core/helpers&#39;</span>); </div></div><!-- fragment --> Per avere disponibile per esempio il set di helpers. </li>
 </ul>
 </div></div><!-- contents -->
 <!-- start footer part -->

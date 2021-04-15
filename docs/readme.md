@@ -154,9 +154,15 @@ nudo forniscono delle utilità molto comode per lo sviluppo modulare del pacchet
 o lo sviluppo di moduli nuovi.
 La patch contiene:
 - Una integrazione con il preprocessore di css [csscrush](https://the-echoplex.net/csscrush/) pre avere una gestione dei 
-css più organizzata. Attualmente i css del gdrcd non sono stati modificati ma si può trovare nella cartella 
-**themes/advanced/css/source/gdrcd.css** e nei vari file presenti in quella sezione i file per iniziare a lavorare con il 
-preprocessore.
+css più organizzata. 
+- Usando il preprocessore di css è stato creato un tema scuro con una palette di colori simile a quella di discord che 
+potete selezionare da config come tema sciegliento demplicemente il valore "discord" da impostare al tema. 
 - Un nuovo gestore delle connessioni e operazioni con il database
 - Dei set di funzioni per il caricamento delle risorse (funzioni,monuli,template) per facilizzare la gestione del lavoro. 
-I vari set di sunzioni hann l aloro guida specifica nelle varie pagine di questa documentaizone.
+I vari set di sunzioni hann l aloro guida specifica nelle varie pagine di questa documentaizone ma principalmente 
+potranno essere attivati, includendo il set specifico di funzioni, o nel **includes/required.php** se si vuole averlo 
+sempre attive, o nella pagina dove si vuole sfruttarlo semplicemente richiamandolo così:
+```php
+ \functions\load('core/helpers'); 
+ ```
+ Per avere disponibile per esempio il set di helpers.
